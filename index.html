@@ -1,0 +1,2218 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Олена Грин — финансовый директор, AI-интегратор и управленец. Строю прозрачные финансы, устраняю кассовые разрывы и превращаю данные в решения для роста.">
+  <meta name="theme-color" content="#0a0a0a">
+  <meta name="author" content="Олена Грин">
+  <meta property="og:type" content="profile">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Олена Грин — финансовый директор и AI-интегратор">
+  <meta property="og:description" content="Помогаю растущему бизнесу устранить кассовые разрывы, повысить прозрачность финансов и принимать решения на основе данных.">
+  <meta property="og:image" content="assets/olena-green-portrait.jpeg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Олена Грин — финансовый директор и AI-интегратор">
+  <meta name="twitter:description" content="Финансы как система роста: прозрачность, ликвидность, аналитика и AI-автоматизация.">
+  <meta name="twitter:image" content="assets/olena-green-portrait.jpeg">
+  <title>Олена Грин — финансовый директор и AI-интегратор</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230a0a0a'/%3E%3Cpath d='M32 13 51 32 32 51 13 32Z' fill='none' stroke='%234ee4c3' stroke-width='5'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfilePage",
+      "mainEntity": {
+        "@type": "Person",
+        "name": "Олена Грин",
+        "jobTitle": "Финансовый директор и AI-интегратор",
+        "image": "assets/olena-green-portrait.jpeg",
+        "email": "mailto:hello@olenagreen.ru",
+        "sameAs": ["https://t.me/olena_green"],
+        "knowsAbout": ["Корпоративные финансы", "Бюджетирование", "Финансовое моделирование", "AI-автоматизация", "Управленческая аналитика"]
+      }
+    }
+  </script>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0a0a0a;
+      --surface: #111312;
+      --surface-raised: #151817;
+      --line: rgba(255, 255, 255, 0.1);
+      --line-strong: rgba(78, 228, 195, 0.32);
+      --text: #f2f6f5;
+      --muted: #9aa5a2;
+      --accent: #4ee4c3;
+      --accent-soft: rgba(78, 228, 195, 0.12);
+      --accent-glow: rgba(78, 228, 195, 0.24);
+      --radius-sm: 16px;
+      --radius: 24px;
+      --radius-lg: 32px;
+      --container: 1240px;
+      --shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scrollbar-color: var(--accent) var(--bg);
+    }
+
+    body {
+      margin: 0;
+      min-width: 320px;
+      overflow-x: hidden;
+      background:
+        radial-gradient(circle at 85% 4%, rgba(78, 228, 195, 0.08), transparent 25rem),
+        var(--bg);
+      color: var(--text);
+      font-family: "Inter", system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      text-rendering: optimizeLegibility;
+    }
+
+    body::before {
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      pointer-events: none;
+      content: "";
+      opacity: 0.22;
+      background-image:
+        linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+      background-size: 72px 72px;
+      mask-image: linear-gradient(to bottom, black, transparent 75%);
+    }
+
+    ::selection {
+      background: var(--accent);
+      color: #06110e;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button,
+    a {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    button {
+      font: inherit;
+    }
+
+    svg {
+      display: block;
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin-top: 0;
+    }
+
+    h1,
+    h2,
+    h3,
+    .brand {
+      font-family: "Montserrat", system-ui, sans-serif;
+    }
+
+    h1,
+    h2,
+    h3 {
+      text-wrap: balance;
+    }
+
+    p {
+      text-wrap: pretty;
+    }
+
+    :focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 5px;
+    }
+
+    .skip-link {
+      position: fixed;
+      top: 12px;
+      left: 12px;
+      z-index: 1000;
+      padding: 10px 14px;
+      border-radius: 10px;
+      background: var(--accent);
+      color: #07110f;
+      font-weight: 700;
+      transform: translateY(-150%);
+      transition: transform 180ms ease;
+    }
+
+    .skip-link:focus {
+      transform: translateY(0);
+    }
+
+    .container {
+      width: min(calc(100% - 32px), var(--container));
+      margin-inline: auto;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      background: rgba(10, 10, 10, 0.78);
+      backdrop-filter: blur(18px);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 68px;
+      gap: 20px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .brand-mark {
+      width: 12px;
+      height: 12px;
+      border: 2px solid var(--accent);
+      border-radius: 3px;
+      box-shadow: 0 0 18px var(--accent-glow);
+      transform: rotate(45deg);
+    }
+
+    .nav-links {
+      display: none;
+      align-items: center;
+      gap: 28px;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 500;
+    }
+
+    .nav-links a {
+      transition: color 180ms ease;
+    }
+
+    .nav-links a:hover,
+    .nav-links a:focus-visible {
+      color: var(--text);
+    }
+
+    .status {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: #c5cecc;
+      font-size: 0;
+      white-space: nowrap;
+    }
+
+    .status-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: var(--accent);
+      box-shadow: 0 0 0 5px rgba(78, 228, 195, 0.1), 0 0 20px var(--accent);
+    }
+
+    .scroll-progress {
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background: linear-gradient(90deg, var(--accent) var(--progress, 0%), transparent 0);
+    }
+
+    main {
+      overflow: hidden;
+    }
+
+    section {
+      padding-block: 84px;
+      scroll-margin-top: 70px;
+    }
+
+    .hero {
+      position: relative;
+      display: grid;
+      align-items: end;
+      min-height: calc(100svh - 68px);
+      padding-block: 54px 32px;
+    }
+
+    .hero-grid {
+      display: grid;
+      gap: 18px;
+    }
+
+    .hero-main,
+    .hero-portrait,
+    .hero-panel,
+    .bento-card,
+    .skill-card,
+    .sector-card,
+    .contact-card {
+      border: 1px solid var(--line);
+      background: linear-gradient(145deg, rgba(255, 255, 255, 0.035), rgba(255, 255, 255, 0.012));
+      box-shadow: var(--shadow);
+    }
+
+    .hero-main {
+      position: relative;
+      isolation: isolate;
+      min-width: 0;
+      overflow: hidden;
+      padding: 26px 20px;
+      border-radius: var(--radius-lg);
+    }
+
+    .hero-main::before {
+      position: absolute;
+      z-index: -1;
+      right: -140px;
+      bottom: -210px;
+      width: 420px;
+      height: 420px;
+      border: 1px solid rgba(78, 228, 195, 0.22);
+      border-radius: 50%;
+      content: "";
+      box-shadow:
+        0 0 0 64px rgba(78, 228, 195, 0.025),
+        0 0 0 128px rgba(78, 228, 195, 0.018);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      margin-bottom: 22px;
+      color: var(--accent);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      width: 24px;
+      height: 1px;
+      background: var(--accent);
+      content: "";
+    }
+
+    h1 {
+      max-width: 900px;
+      margin-bottom: 22px;
+      font-size: clamp(2.05rem, 8.8vw, 6.3rem);
+      line-height: 0.96;
+      letter-spacing: -0.07em;
+    }
+
+    .accent-text {
+      color: var(--accent);
+    }
+
+    .hero-copy {
+      max-width: 670px;
+      margin-bottom: 30px;
+      color: #b8c1bf;
+      font-size: clamp(1rem, 2.2vw, 1.2rem);
+    }
+
+    .hero-actions,
+    .contact-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 50px;
+      padding: 0 18px;
+      border: 1px solid transparent;
+      border-radius: 999px;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 600;
+      transition: transform 180ms ease, background-color 180ms ease, border-color 180ms ease, color 180ms ease, box-shadow 180ms ease;
+    }
+
+    .button svg {
+      width: 17px;
+      margin-left: 10px;
+      transition: transform 180ms ease;
+    }
+
+    .button-primary {
+      background: var(--accent);
+      color: #06110e;
+      box-shadow: 0 0 30px rgba(78, 228, 195, 0.14);
+    }
+
+    .button-secondary {
+      border-color: var(--line);
+      background: rgba(255, 255, 255, 0.025);
+      color: var(--text);
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+    }
+
+    .button:hover svg {
+      transform: translateX(3px);
+    }
+
+    .button-primary:hover {
+      box-shadow: 0 10px 35px rgba(78, 228, 195, 0.22);
+    }
+
+    .button-secondary:hover {
+      border-color: var(--line-strong);
+      background: var(--accent-soft);
+    }
+
+    .hero-aside {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      min-width: 0;
+    }
+
+    .hero-portrait {
+      position: relative;
+      isolation: isolate;
+      grid-column: 1 / -1;
+      min-height: 390px;
+      margin: 0;
+      overflow: hidden;
+      border-radius: var(--radius);
+      background: #111715;
+    }
+
+    .hero-portrait::before {
+      position: absolute;
+      z-index: 1;
+      inset: 0;
+      background:
+        linear-gradient(180deg, rgba(5, 11, 9, 0.02) 35%, rgba(5, 11, 9, 0.88) 100%),
+        linear-gradient(90deg, rgba(78, 228, 195, 0.1), transparent 35%);
+      content: "";
+      pointer-events: none;
+    }
+
+    .hero-portrait::after {
+      position: absolute;
+      z-index: 2;
+      inset: 12px;
+      border: 1px solid rgba(78, 228, 195, 0.24);
+      border-radius: calc(var(--radius) - 9px);
+      content: "";
+      pointer-events: none;
+    }
+
+    .hero-portrait img {
+      width: 100%;
+      height: 100%;
+      min-height: 390px;
+      object-fit: cover;
+      object-position: 54% center;
+      filter: saturate(0.82) contrast(1.04) brightness(0.9);
+      transform: scale(1.015);
+      transition: filter 500ms ease, transform 700ms ease;
+    }
+
+    .hero-portrait:hover img {
+      filter: saturate(0.96) contrast(1.03) brightness(0.96);
+      transform: scale(1.04);
+    }
+
+    .portrait-badge {
+      position: absolute;
+      z-index: 3;
+      top: 24px;
+      left: 24px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 11px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 999px;
+      background: rgba(7, 12, 10, 0.55);
+      color: #e6eeec;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      backdrop-filter: blur(12px);
+    }
+
+    .portrait-badge::before {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 14px var(--accent);
+      content: "";
+    }
+
+    .portrait-meta {
+      position: absolute;
+      z-index: 3;
+      right: 24px;
+      bottom: 24px;
+      left: 24px;
+    }
+
+    .portrait-meta strong {
+      display: block;
+      margin-bottom: 4px;
+      font-family: "Montserrat", system-ui, sans-serif;
+      font-size: 1.05rem;
+      letter-spacing: -0.03em;
+    }
+
+    .portrait-meta span {
+      color: #aab5b2;
+      font-size: 11px;
+    }
+
+    .hero-panel {
+      min-height: 150px;
+      padding: 18px;
+      border-radius: var(--radius);
+    }
+
+    .panel-label,
+    .card-kicker {
+      display: block;
+      margin-bottom: 22px;
+      color: var(--muted);
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+    }
+
+    .role-list {
+      display: grid;
+      gap: 8px;
+    }
+
+    .role {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--line);
+      color: #c9d0cf;
+      font-size: 13px;
+    }
+
+    .role:last-child {
+      padding-bottom: 0;
+      border-bottom: 0;
+    }
+
+    .role span:last-child {
+      color: var(--accent);
+    }
+
+    .mini-metric strong {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--accent);
+      font-family: "Montserrat", system-ui, sans-serif;
+      font-size: clamp(1.55rem, 7vw, 2.35rem);
+      line-height: 1;
+      letter-spacing: -0.05em;
+    }
+
+    .mini-metric p {
+      margin-bottom: 0;
+      color: var(--muted);
+      font-size: 11px;
+      line-height: 1.45;
+    }
+
+    .trust-strip {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1px;
+      margin-top: 18px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-sm);
+      background: var(--line);
+    }
+
+    .trust-item {
+      padding: 16px 12px;
+      background: var(--bg);
+      color: var(--muted);
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .section-heading {
+      display: grid;
+      gap: 14px;
+      margin-bottom: 32px;
+    }
+
+    .section-index {
+      color: var(--accent);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+    }
+
+    h2 {
+      max-width: 900px;
+      margin-bottom: 0;
+      font-size: clamp(2rem, 8vw, 4.5rem);
+      line-height: 1.03;
+      letter-spacing: -0.055em;
+    }
+
+    .section-lead {
+      max-width: 620px;
+      margin-bottom: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .bento {
+      display: grid;
+      width: 100%;
+      max-width: 100%;
+      min-width: 0;
+      grid-auto-columns: 100%;
+      grid-auto-flow: column;
+      gap: 14px;
+      padding: 2px;
+      overflow-x: auto;
+      overscroll-behavior-inline: contain;
+      scroll-behavior: smooth;
+      scroll-padding-inline: 2px;
+      scroll-snap-type: inline mandatory;
+      scrollbar-width: none;
+      touch-action: pan-x;
+    }
+
+    .bento::-webkit-scrollbar {
+      display: none;
+    }
+
+    .bento-card {
+      position: relative;
+      isolation: isolate;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      min-height: 390px;
+      padding: 22px;
+      border-radius: var(--radius);
+      scroll-snap-align: start;
+      scroll-snap-stop: always;
+      opacity: 0.62;
+      transition: opacity 300ms ease, border-color 220ms ease, background-color 220ms ease;
+    }
+
+    .bento-card::after {
+      position: absolute;
+      z-index: -1;
+      right: -80px;
+      bottom: -100px;
+      width: 210px;
+      height: 210px;
+      border-radius: 50%;
+      background: var(--accent);
+      content: "";
+      opacity: 0;
+      filter: blur(90px);
+      transition: opacity 220ms ease;
+    }
+
+    .bento-card:hover,
+    .bento-card.is-active {
+      opacity: 1;
+      border-color: var(--line-strong);
+    }
+
+    .bento-card:hover::after,
+    .bento-card.is-active::after {
+      opacity: 0.14;
+    }
+
+    .metric {
+      display: block;
+      margin-bottom: 18px;
+      color: var(--accent);
+      font-family: "Montserrat", system-ui, sans-serif;
+      font-size: clamp(3.3rem, 15vw, 6.5rem);
+      font-weight: 700;
+      line-height: 0.85;
+      letter-spacing: -0.08em;
+    }
+
+    .metric small {
+      margin-left: 4px;
+      font-size: 0.35em;
+      letter-spacing: -0.03em;
+    }
+
+    .bento-card h3,
+    .skill-card h3,
+    .sector-card h3 {
+      margin-bottom: 10px;
+      font-size: 1rem;
+      line-height: 1.25;
+      letter-spacing: -0.02em;
+    }
+
+    .bento-card p,
+    .skill-card p,
+    .sector-card p {
+      margin-bottom: 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .bento-card p {
+      max-width: 520px;
+      margin-top: auto;
+      font-size: 14px;
+    }
+
+    .case-facts {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8px;
+      margin: 24px 0;
+    }
+
+    .case-fact {
+      padding: 12px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.018);
+    }
+
+    .case-fact span {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--muted);
+      font-size: 9px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .case-fact strong {
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .results-carousel {
+      position: relative;
+      width: 100%;
+      max-width: 100%;
+      min-width: 0;
+      overflow: hidden;
+    }
+
+    .carousel-toolbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-top: 18px;
+    }
+
+    .carousel-status {
+      display: flex;
+      align-items: center;
+      flex: 1;
+      gap: 12px;
+      min-width: 0;
+    }
+
+    .carousel-count {
+      flex: 0 0 auto;
+      color: #d8dfdd;
+      font-family: "Montserrat", system-ui, sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+    }
+
+    .carousel-progress {
+      position: relative;
+      width: min(220px, 100%);
+      height: 2px;
+      overflow: hidden;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    .carousel-progress span {
+      display: block;
+      width: 25%;
+      height: 100%;
+      border-radius: inherit;
+      background: var(--accent);
+      box-shadow: 0 0 12px var(--accent-glow);
+      transform: translateX(0);
+      transition: transform 350ms ease;
+    }
+
+    .carousel-controls {
+      display: flex;
+      gap: 8px;
+    }
+
+    .carousel-button {
+      display: grid;
+      width: 46px;
+      height: 46px;
+      padding: 0;
+      border: 1px solid var(--line);
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.025);
+      color: var(--text);
+      cursor: pointer;
+      place-items: center;
+      transition: color 180ms ease, background-color 180ms ease, border-color 180ms ease, transform 180ms ease;
+    }
+
+    .carousel-button:hover {
+      border-color: var(--line-strong);
+      background: var(--accent-soft);
+      color: var(--accent);
+      transform: translateY(-2px);
+    }
+
+    .carousel-button svg {
+      width: 18px;
+    }
+
+    .carousel-button.is-paused {
+      border-color: var(--line-strong);
+      color: var(--accent);
+    }
+
+    .timeline {
+      position: relative;
+      display: grid;
+      gap: 12px;
+      margin-top: 12px;
+    }
+
+    .about-layout {
+      display: grid;
+      gap: 18px;
+    }
+
+    .about-media {
+      position: relative;
+      isolation: isolate;
+      display: flex;
+      min-height: 460px;
+      margin: 0;
+      overflow: hidden;
+      border: 1px solid var(--line-strong);
+      border-radius: var(--radius-lg);
+      background: #111715;
+      box-shadow: var(--shadow);
+    }
+
+    .about-media::before {
+      position: absolute;
+      z-index: 1;
+      inset: 0;
+      background:
+        linear-gradient(180deg, rgba(6, 12, 10, 0.03) 25%, rgba(6, 12, 10, 0.94) 100%),
+        linear-gradient(135deg, rgba(78, 228, 195, 0.12), transparent 45%);
+      content: "";
+      pointer-events: none;
+    }
+
+    .about-media img {
+      width: 100%;
+      min-height: 460px;
+      object-fit: cover;
+      object-position: 54% center;
+      filter: saturate(0.7) brightness(0.72);
+      transform: scale(1.04);
+      transition: filter 500ms ease, transform 700ms ease;
+    }
+
+    .about-media:hover img {
+      filter: saturate(0.9) brightness(0.82);
+      transform: scale(1.07);
+    }
+
+    .about-media-content {
+      position: absolute;
+      z-index: 2;
+      inset: auto 22px 22px;
+    }
+
+    .about-media-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 18px;
+      color: var(--accent);
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+    }
+
+    .about-media-label::before {
+      width: 22px;
+      height: 1px;
+      background: var(--accent);
+      content: "";
+    }
+
+    .about-media h3 {
+      max-width: 420px;
+      margin-bottom: 10px;
+      font-size: clamp(1.45rem, 5vw, 2.3rem);
+      line-height: 1.05;
+      letter-spacing: -0.045em;
+    }
+
+    .about-media p {
+      max-width: 430px;
+      margin-bottom: 22px;
+      color: #b9c3c0;
+      font-size: 12px;
+    }
+
+    .about-media-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+    }
+
+    .video-play-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      min-height: 48px;
+      padding: 0 17px;
+      border: 0;
+      border-radius: 999px;
+      background: var(--accent);
+      color: #06110e;
+      cursor: pointer;
+      font-size: 12px;
+      font-weight: 700;
+      box-shadow: 0 0 30px rgba(78, 228, 195, 0.16);
+      transition: transform 180ms ease, box-shadow 180ms ease;
+    }
+
+    .video-play-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 36px rgba(78, 228, 195, 0.26);
+    }
+
+    .video-play-button svg {
+      width: 17px;
+      height: 17px;
+    }
+
+    .timeline-card {
+      display: grid;
+      gap: 12px;
+      padding: 20px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    .timeline-date {
+      color: var(--accent);
+      font-family: "Montserrat", system-ui, sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+    }
+
+    .timeline-card h3 {
+      margin-bottom: 5px;
+      font-size: 1rem;
+    }
+
+    .timeline-card p {
+      margin-bottom: 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .video-modal {
+      width: min(100% - 24px, 1100px);
+      max-height: calc(100dvh - 24px);
+      padding: 0;
+      overflow: visible;
+      border: 1px solid var(--line-strong);
+      border-radius: var(--radius);
+      background: #080a09;
+      color: var(--text);
+      box-shadow: 0 40px 120px rgba(0, 0, 0, 0.72);
+    }
+
+    .video-modal::backdrop {
+      background: rgba(0, 0, 0, 0.84);
+      backdrop-filter: blur(12px);
+    }
+
+    .video-modal-inner {
+      overflow: hidden;
+      border-radius: inherit;
+    }
+
+    .video-modal-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .video-modal-title {
+      font-family: "Montserrat", system-ui, sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+
+    .video-modal-close {
+      display: grid;
+      width: 40px;
+      height: 40px;
+      padding: 0;
+      border: 1px solid var(--line);
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.03);
+      color: var(--text);
+      cursor: pointer;
+      place-items: center;
+      transition: border-color 180ms ease, color 180ms ease, transform 180ms ease;
+    }
+
+    .video-modal-close:hover {
+      border-color: var(--line-strong);
+      color: var(--accent);
+      transform: rotate(90deg);
+    }
+
+    .video-modal-close svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    .video-frame {
+      position: relative;
+      aspect-ratio: 16 / 9;
+      background: #000;
+    }
+
+    .video-frame iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    body.modal-open {
+      overflow: hidden;
+    }
+
+    .process-grid,
+    .engagement-grid {
+      display: grid;
+      gap: 12px;
+    }
+
+    .process-card,
+    .engagement-card {
+      position: relative;
+      overflow: hidden;
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: linear-gradient(145deg, rgba(255, 255, 255, 0.035), rgba(255, 255, 255, 0.012));
+    }
+
+    .process-card::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: var(--stage, 33%);
+      height: 2px;
+      background: var(--accent);
+      content: "";
+      box-shadow: 0 0 16px var(--accent-glow);
+    }
+
+    .process-day {
+      display: block;
+      margin-bottom: 30px;
+      color: var(--accent);
+      font-family: "Montserrat", system-ui, sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+    }
+
+    .process-card h3,
+    .engagement-card h3 {
+      margin-bottom: 12px;
+      font-size: 1.15rem;
+      line-height: 1.25;
+    }
+
+    .process-card p,
+    .engagement-card p {
+      margin-bottom: 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .deliverables {
+      display: grid;
+      gap: 8px;
+      margin: 22px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .deliverables li {
+      display: flex;
+      gap: 9px;
+      color: #c2cbc8;
+      font-size: 12px;
+    }
+
+    .deliverables li::before {
+      flex: 0 0 auto;
+      margin-top: 0.65em;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--accent);
+      content: "";
+      box-shadow: 0 0 10px var(--accent-glow);
+    }
+
+    .engagement-card {
+      display: flex;
+      flex-direction: column;
+      min-height: 330px;
+      transition: transform 220ms ease, border-color 220ms ease;
+    }
+
+    .engagement-card:hover {
+      border-color: var(--line-strong);
+      transform: translateY(-4px);
+    }
+
+    .engagement-label {
+      display: inline-flex;
+      align-self: flex-start;
+      margin-bottom: auto;
+      padding: 7px 9px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--accent);
+      font-size: 9px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .engagement-card h3 {
+      margin-top: 36px;
+    }
+
+    .engagement-fit {
+      margin-top: 22px;
+      padding-top: 16px;
+      border-top: 1px solid var(--line);
+      color: #cbd3d1;
+      font-size: 11px;
+    }
+
+    .inline-cta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      margin-top: 18px;
+      padding: 20px;
+      border: 1px solid var(--line-strong);
+      border-radius: var(--radius);
+      background: var(--accent-soft);
+    }
+
+    .inline-cta strong {
+      display: block;
+      margin-bottom: 3px;
+      font-family: "Montserrat", system-ui, sans-serif;
+      font-size: 14px;
+    }
+
+    .inline-cta span {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .skills-wrap {
+      position: relative;
+    }
+
+    .skills {
+      display: grid;
+      grid-auto-columns: minmax(82%, 1fr);
+      grid-auto-flow: column;
+      gap: 12px;
+      margin-inline: -16px;
+      padding: 2px 16px 18px;
+      overflow-x: auto;
+      overscroll-behavior-inline: contain;
+      scroll-snap-type: inline mandatory;
+      scrollbar-width: thin;
+      scrollbar-color: var(--accent) transparent;
+    }
+
+    .skill-card {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      min-height: 360px;
+      padding: 22px;
+      border-radius: var(--radius);
+      scroll-snap-align: start;
+    }
+
+    .skill-icon {
+      display: grid;
+      width: 52px;
+      height: 52px;
+      margin-bottom: auto;
+      border: 1px solid var(--line-strong);
+      border-radius: 16px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      place-items: center;
+    }
+
+    .skill-icon svg {
+      width: 24px;
+      height: 24px;
+    }
+
+    .skill-number {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      color: #55605d;
+      font-family: "Montserrat", system-ui, sans-serif;
+      font-size: 11px;
+      letter-spacing: 0.1em;
+    }
+
+    .skill-card h3 {
+      margin-top: 34px;
+      font-size: 1.35rem;
+    }
+
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 18px;
+    }
+
+    .tag {
+      padding: 6px 9px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: #b8c1bf;
+      font-size: 10px;
+      white-space: nowrap;
+    }
+
+    .swipe-hint {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    .swipe-hint svg {
+      width: 28px;
+      color: var(--accent);
+      animation: swipe 1.8s ease-in-out infinite;
+    }
+
+    .sectors {
+      display: grid;
+      gap: 12px;
+    }
+
+    .sector-card {
+      padding: 20px;
+      border-radius: var(--radius);
+    }
+
+    .sector-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 28px;
+    }
+
+    .sector-number {
+      color: var(--accent);
+      font-family: "Montserrat", system-ui, sans-serif;
+      font-size: 11px;
+    }
+
+    .sector-arrow {
+      width: 34px;
+      height: 34px;
+      padding: 9px;
+      border: 1px solid var(--line);
+      border-radius: 50%;
+      color: var(--muted);
+      transition: color 180ms ease, border-color 180ms ease, transform 180ms ease;
+    }
+
+    .sector-card:hover .sector-arrow {
+      border-color: var(--line-strong);
+      color: var(--accent);
+      transform: rotate(45deg);
+    }
+
+    .contact-section {
+      padding-bottom: 24px;
+    }
+
+    .contact-card {
+      position: relative;
+      isolation: isolate;
+      overflow: hidden;
+      padding: 30px 20px;
+      border-color: var(--line-strong);
+      border-radius: var(--radius-lg);
+    }
+
+    .contact-card::before {
+      position: absolute;
+      z-index: -1;
+      top: 50%;
+      right: -160px;
+      width: 340px;
+      height: 340px;
+      border-radius: 50%;
+      background: var(--accent);
+      content: "";
+      opacity: 0.08;
+      filter: blur(100px);
+      transform: translateY(-50%);
+    }
+
+    .contact-card h2 {
+      max-width: 780px;
+      margin-bottom: 18px;
+    }
+
+    .contact-card p {
+      max-width: 570px;
+      margin-bottom: 28px;
+      color: #aeb8b5;
+      font-size: 14px;
+    }
+
+    .copy-note {
+      min-height: 20px;
+      margin: 12px 0 0;
+      color: var(--accent);
+      font-size: 11px;
+    }
+
+    footer {
+      padding-block: 20px 30px;
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    .footer-inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 10px 22px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(18px);
+      transition: opacity 650ms ease, transform 650ms ease;
+    }
+
+    .reveal.is-visible {
+      opacity: 1;
+      transform: none;
+    }
+
+    @keyframes swipe {
+      0%,
+      100% {
+        transform: translateX(0);
+      }
+      50% {
+        transform: translateX(7px);
+      }
+    }
+
+    @media (min-width: 700px) {
+      .container {
+        width: min(calc(100% - 64px), var(--container));
+      }
+
+      .nav-links {
+        display: flex;
+      }
+
+      .status {
+        font-size: 12px;
+      }
+
+      h1 {
+        font-size: clamp(3.2rem, 6.1vw, 6.3rem);
+      }
+
+      .hero {
+        padding-block: 72px 42px;
+      }
+
+      .hero-grid {
+        grid-template-columns: minmax(0, 1.45fr) minmax(300px, 0.75fr);
+      }
+
+      .hero-main {
+        padding: 40px;
+      }
+
+      .hero-aside {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: minmax(390px, 1fr) auto;
+      }
+
+      .hero-portrait {
+        min-height: 390px;
+      }
+
+      .hero-portrait img {
+        min-height: 390px;
+      }
+
+      .trust-strip {
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      section {
+        padding-block: 112px;
+      }
+
+      .section-heading {
+        grid-template-columns: 0.8fr 1.2fr;
+        align-items: end;
+        margin-bottom: 46px;
+      }
+
+      .section-heading .section-lead {
+        justify-self: end;
+      }
+
+      .bento {
+        grid-auto-columns: 100%;
+      }
+
+      .bento-card {
+        min-height: 430px;
+        padding: 28px;
+      }
+
+      .timeline-card {
+        grid-template-columns: 150px 1fr;
+        padding: 24px;
+      }
+
+      .about-layout {
+        grid-template-columns: minmax(300px, 0.82fr) minmax(0, 1.18fr);
+        align-items: stretch;
+      }
+
+      .about-media,
+      .about-media img {
+        min-height: 100%;
+      }
+
+      .about-media-content {
+        inset: auto 28px 28px;
+      }
+
+      .process-grid,
+      .engagement-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .process-card,
+      .engagement-card {
+        padding: 26px;
+      }
+
+      .skills {
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-flow: initial;
+        margin-inline: 0;
+        padding-inline: 0;
+        overflow: visible;
+      }
+
+      .skill-card {
+        min-height: 410px;
+        padding: 26px;
+      }
+
+      .swipe-hint {
+        display: none;
+      }
+
+      .sectors {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .contact-card {
+        padding: 54px;
+      }
+    }
+
+    @media (min-width: 1080px) {
+      .bento {
+        grid-auto-columns: 100%;
+      }
+
+      .bento-card {
+        min-height: 470px;
+      }
+
+      .sectors {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+      }
+
+      .reveal {
+        opacity: 1;
+        transform: none;
+      }
+    }
+
+    @media print {
+      .site-header,
+      .hero-actions,
+      .carousel-controls,
+      .swipe-hint,
+      .contact-actions,
+      .scroll-progress {
+        display: none !important;
+      }
+
+      body,
+      .hero-main,
+      .hero-portrait,
+      .hero-panel,
+      .bento-card,
+      .skill-card,
+      .sector-card,
+      .contact-card,
+      .process-card,
+      .engagement-card {
+        background: #fff !important;
+        color: #111 !important;
+        box-shadow: none !important;
+      }
+
+      body {
+        font-size: 11pt;
+      }
+
+      section {
+        padding-block: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержанию</a>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="Олена Грин — наверх">
+        <span class="brand-mark" aria-hidden="true"></span>
+        Олена Грин
+      </a>
+      <nav class="nav-links" aria-label="Основная навигация">
+        <a href="#results">Результаты</a>
+        <a href="#first-90-days">Подход</a>
+        <a href="#engagement">Сотрудничество</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+      <span class="status"><span class="status-dot" aria-hidden="true"></span>Открыта к проектам</span>
+    </div>
+    <div class="scroll-progress" aria-hidden="true"></div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="hero-grid">
+          <article class="hero-main reveal">
+            <span class="eyebrow">Финансы как система роста</span>
+            <h1 id="hero-title">Финансовый директор<span class="accent-text">.</span><br>AI-интегратор<span class="accent-text">.</span><br>Управленец<span class="accent-text">.</span></h1>
+            <p class="hero-copy">Превращаю цифры в управленческие решения: выстраиваю прозрачные финансы, устраняю кассовые разрывы и внедряю AI, чтобы бизнес рос быстрее и устойчивее.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#contact">
+                Назначить встречу
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M14 7l5 5-5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+              <a class="button button-secondary" href="#results">Смотреть результаты</a>
+            </div>
+          </article>
+
+          <aside class="hero-aside" aria-label="Портрет и ключевые показатели">
+            <figure class="hero-portrait reveal">
+              <img src="assets/olena-green-portrait.jpeg" alt="Олена Грин, финансовый директор и AI-интегратор" width="1400" height="788" fetchpriority="high">
+              <span class="portrait-badge">CFO · AI · Management</span>
+              <figcaption class="portrait-meta">
+                <strong>Олена Грин</strong>
+                <span>Бизнес-партнер для собственника и CEO</span>
+              </figcaption>
+            </figure>
+            <div class="hero-panel mini-metric reveal">
+              <span class="panel-label">Экономия</span>
+              <strong>−15%</strong>
+              <p>нецелевых расходов за первый квартал</p>
+            </div>
+            <div class="hero-panel mini-metric reveal">
+              <span class="panel-label">Скорость</span>
+              <strong>×18</strong>
+              <p>быстрее подготовка финансовой отчетности</p>
+            </div>
+          </aside>
+        </div>
+
+        <div class="trust-strip reveal" aria-label="Принципы работы">
+          <div class="trust-item">Данные вместо интуиции</div>
+          <div class="trust-item">Система вместо ручного труда</div>
+          <div class="trust-item">Результат вместо процесса</div>
+          <div class="trust-item">Партнерство вместо контроля</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="results" aria-labelledby="results-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <span class="section-index">01 / РЕЗУЛЬТАТЫ</span>
+            <h2 id="results-title">Управление, которое видно в цифрах<span class="accent-text">.</span></h2>
+          </div>
+          <p class="section-lead">Создаю финансовую функцию как работающий механизм: от планирования и ликвидности до аналитики и масштабирования.</p>
+        </div>
+
+        <div class="results-carousel reveal" aria-roledescription="карусель" aria-label="Ключевые результаты">
+          <div class="bento" id="results-track" tabindex="0">
+            <article class="bento-card is-active" aria-label="Результат 1 из 4">
+              <span class="card-kicker">Бюджетирование</span>
+              <strong class="metric">−15<small>%</small></strong>
+              <h3>Сокращение нецелевых расходов</h3>
+              <div class="case-facts">
+                <div class="case-fact"><span>Задача</span><strong>Создать бюджетный цикл</strong></div>
+                <div class="case-fact"><span>Срок эффекта</span><strong>Первый квартал</strong></div>
+              </div>
+              <p>Внедрила систему планирования и контроля бюджета с нуля. Первый измеримый эффект получен уже за квартал.</p>
+            </article>
+            <article class="bento-card" aria-label="Результат 2 из 4">
+              <span class="card-kicker">Ликвидность</span>
+              <strong class="metric">0</strong>
+              <h3>Кассовых разрывов</h3>
+              <div class="case-facts">
+                <div class="case-fact"><span>До внедрения</span><strong>До 5 млн ₽ в месяц</strong></div>
+                <div class="case-fact"><span>Решение</span><strong>Платежный календарь</strong></div>
+              </div>
+              <p>Платежный календарь и управление оборотным капиталом устранили разрывы до 5 млн ₽ в месяц.</p>
+            </article>
+            <article class="bento-card" aria-label="Результат 3 из 4">
+              <span class="card-kicker">AI-автоматизация</span>
+              <strong class="metric">4<small>ч</small></strong>
+              <h3>Вместо трех дней</h3>
+              <div class="case-facts">
+                <div class="case-fact"><span>Было</span><strong>3 рабочих дня</strong></div>
+                <div class="case-fact"><span>Стало</span><strong>4 часа</strong></div>
+              </div>
+              <p>Нейросети и предиктивная аналитика ускорили подготовку финансовой отчетности в 18 раз.</p>
+            </article>
+            <article class="bento-card" aria-label="Результат 4 из 4">
+              <span class="card-kicker">Масштабирование</span>
+              <strong class="metric">3</strong>
+              <h3>Новых направления</h3>
+              <div class="case-facts">
+                <div class="case-fact"><span>Инструмент</span><strong>Сценарная финмодель</strong></div>
+                <div class="case-fact"><span>Финансирование</span><strong>Без заемных средств</strong></div>
+              </div>
+              <p>Финансовая модель позволила запустить новые направления без привлечения заемных средств.</p>
+            </article>
+          </div>
+          <div class="carousel-toolbar">
+            <div class="carousel-status" aria-live="polite">
+              <span class="carousel-count"><span id="carousel-current">01</span> / 04</span>
+              <span class="carousel-progress" aria-hidden="true"><span id="carousel-progress"></span></span>
+            </div>
+            <div class="carousel-controls">
+              <button class="carousel-button" id="carousel-toggle" type="button" aria-label="Остановить автопрокрутку" aria-pressed="false">
+                <svg class="pause-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 6v12M15 6v12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+                <svg class="play-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true" hidden><path d="m9 6 9 6-9 6V6Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+              </button>
+              <button class="carousel-button" id="carousel-prev" type="button" aria-label="Предыдущий результат">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m14 6-6 6 6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <button class="carousel-button" id="carousel-next" type="button" aria-label="Следующий результат">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m10 6 6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" aria-labelledby="experience-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <span class="section-index">02 / ОБО МНЕ</span>
+            <h2 id="experience-title">Обо мне<span class="accent-text">.</span> От учета фактов к управлению будующим<span class="accent-text">.</span></h2>
+          </div>
+          <p class="section-lead">Мой профессиональный путь — это переход от точной фиксации данных к созданию систем, которые помогают бизнесу видеть будущее и действовать увереннее.</p>
+        </div>
+
+        <div class="about-layout">
+          <figure class="about-media reveal">
+            <img src="assets/olena-green-portrait.jpeg" alt="Олена Грин — финансовый директор и управленец" width="1400" height="788" loading="lazy">
+            <figcaption class="about-media-content">
+              <span class="about-media-label">Видео-знакомство</span>
+              <h3>О финансах, управлении и моем подходе к работе</h3>
+              <p>Коротко рассказываю, как соединяю финансовую дисциплину, системное управление и современные технологии.</p>
+              <div class="about-media-actions">
+                <button class="video-play-button" id="open-about-video" type="button">
+                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m9 6 9 6-9 6V6Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+                  Смотреть видео
+                </button>
+                <a class="button button-secondary" href="https://pin.it/5GoqVE6M3" target="_blank" rel="noopener noreferrer">Подробно обо мне</a>
+              </div>
+            </figcaption>
+          </figure>
+
+          <div class="timeline">
+            <article class="timeline-card reveal">
+              <div class="timeline-date">2024 — СЕЙЧАС</div>
+              <div>
+                <h3>Финансовый директор / AI-интегратор</h3>
+                <p>Внедрение управленческой отчетности, сценарного моделирования и AI-инструментов. Поддержка решений собственника по росту, продуктам и инвестициям.</p>
+              </div>
+            </article>
+            <article class="timeline-card reveal">
+              <div class="timeline-date">2022 — 2024</div>
+              <div>
+                <h3>Руководитель финансовой функции</h3>
+                <p>Построение бюджетного цикла, платежного календаря и контроля экономики направлений. Повышение прозрачности и управляемости денежного потока.</p>
+              </div>
+            </article>
+            <article class="timeline-card reveal">
+              <div class="timeline-date">2020 — 2022</div>
+              <div>
+                <h3>Финансовый менеджер / бизнес-аналитик</h3>
+                <p>Оцифровка процессов, консолидация данных и создание финансовых моделей для оценки инициатив, рентабельности и точек роста.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="first-90-days" aria-labelledby="first-90-days-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <span class="section-index">03 / ПЕРВЫЕ 90 ДНЕЙ</span>
+            <h2 id="first-90-days-title">От диагностики к управляемой системе<span class="accent-text">.</span></h2>
+          </div>
+          <p class="section-lead">Начинаю с бизнес-задач собственника, быстро создаю прозрачность и только затем масштабирую изменения на процессы и команду.</p>
+        </div>
+
+        <div class="process-grid">
+          <article class="process-card reveal" style="--stage: 33%">
+            <span class="process-day">ДНИ 01–30</span>
+            <h3>Диагностика и быстрые победы</h3>
+            <p>Фиксирую финансовую картину, риски ликвидности и точки потери маржи.</p>
+            <ul class="deliverables">
+              <li>Аудит отчетности и денежных потоков</li>
+              <li>Платежный календарь и прогноз ликвидности</li>
+              <li>Карта финансовых рисков</li>
+            </ul>
+          </article>
+          <article class="process-card reveal" style="--stage: 66%">
+            <span class="process-day">ДНИ 31–60</span>
+            <h3>Система управления</h3>
+            <p>Настраиваю единый ритм планирования, контроля и принятия решений.</p>
+            <ul class="deliverables">
+              <li>P&amp;L, Cash Flow и управленческий баланс</li>
+              <li>Бюджетный цикл и план-факт анализ</li>
+              <li>Дашборд показателей для CEO</li>
+            </ul>
+          </article>
+          <article class="process-card reveal" style="--stage: 100%">
+            <span class="process-day">ДНИ 61–90</span>
+            <h3>Рост и автоматизация</h3>
+            <p>Перевожу финансовую функцию из контроля прошлого в управление будущим.</p>
+            <ul class="deliverables">
+              <li>Сценарная финансовая модель</li>
+              <li>Автоматизация отчетности и AI-инструменты</li>
+              <li>План улучшений на следующие два квартала</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="inline-cta reveal">
+          <div><strong>Нужен понятный план трансформации?</strong><span>На первой встрече определим 3 приоритетных финансовых решения.</span></div>
+          <a class="button button-primary" href="#contact">Назначить встречу</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="engagement" aria-labelledby="engagement-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <span class="section-index">04 / ФОРМАТЫ СОТРУДНИЧЕСТВА</span>
+            <h2 id="engagement-title">Под задачу и этап развития бизнеса<span class="accent-text">.</span></h2>
+          </div>
+          <p class="section-lead">Формат определяем после диагностики: от точечного проекта до постоянной роли бизнес-партнера собственника.</p>
+        </div>
+
+        <div class="engagement-grid">
+          <article class="engagement-card reveal">
+            <span class="engagement-label">Стратегическая роль</span>
+            <h3>Финансовый директор</h3>
+            <p>Полная ответственность за финансовую функцию, управленческую отчетность, ликвидность и поддержку стратегических решений.</p>
+            <span class="engagement-fit">Подходит бизнесу, которому нужен постоянный партнер CEO.</span>
+          </article>
+          <article class="engagement-card reveal">
+            <span class="engagement-label">Проект 8–12 недель</span>
+            <h3>Трансформация финансов</h3>
+            <p>Диагностика, внедрение управленческой отчетности, бюджетирования, платежного календаря и финансовой модели.</p>
+            <span class="engagement-fit">Подходит компании перед ростом или после периода быстрого масштабирования.</span>
+          </article>
+          <article class="engagement-card reveal">
+            <span class="engagement-label">Технологический проект</span>
+            <h3>AI и автоматизация</h3>
+            <p>Поиск процессов с максимальным эффектом, прототипирование и внедрение решений для аналитики и отчетности.</p>
+            <span class="engagement-fit">Подходит командам, которые хотят сократить ручной труд и ускорить решения.</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <span class="section-index">05 / КОМПЕТЕНЦИИ</span>
+            <h2 id="skills-title">Финансы, технологии, управление<span class="accent-text">.</span></h2>
+          </div>
+          <p class="section-lead">Соединяю финансовую дисциплину с современными инструментами автоматизации и продуктовым мышлением.</p>
+        </div>
+
+        <div class="skills-wrap">
+          <div class="skills" aria-label="Карточки компетенций">
+            <article class="skill-card reveal">
+              <span class="skill-number">01</span>
+              <div class="skill-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M4 19V9m5 10V5m5 14v-7m5 7V3M3 19h18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+              </div>
+              <h3>Корпоративные финансы</h3>
+              <p>Выстраиваю финансовую архитектуру, которая помогает видеть риски раньше и инвестировать увереннее.</p>
+              <div class="skill-tags">
+                <span class="tag">P&amp;L / CF / Balance</span>
+                <span class="tag">Бюджетирование</span>
+                <span class="tag">Финмодели</span>
+                <span class="tag">Unit-экономика</span>
+              </div>
+            </article>
+
+            <article class="skill-card reveal">
+              <span class="skill-number">02</span>
+              <div class="skill-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M12 3v3m0 12v3M3 12h3m12 0h3M5.64 5.64l2.12 2.12m8.48 8.48 2.12 2.12m0-12.72-2.12 2.12m-8.48 8.48-2.12 2.12M16 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+              </div>
+              <h3>AI и автоматизация</h3>
+              <p>Встраиваю нейросети в реальные процессы: сокращаю ручные операции и повышаю качество аналитики.</p>
+              <div class="skill-tags">
+                <span class="tag">AI-агенты</span>
+                <span class="tag">Предиктивная аналитика</span>
+                <span class="tag">No-code</span>
+                <span class="tag">Промпт-инжиниринг</span>
+              </div>
+            </article>
+
+            <article class="skill-card reveal">
+              <span class="skill-number">03</span>
+              <div class="skill-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="m8 8-4 4 4 4m8-8 4 4-4 4m-2-11-4 14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <h3>Вайб-кодинг</h3>
+              <p>Быстро создаю рабочие прототипы, дашборды и внутренние инструменты для проверки бизнес-гипотез.</p>
+              <div class="skill-tags">
+                <span class="tag">Прототипирование</span>
+                <span class="tag">Дашборды</span>
+                <span class="tag">Web-инструменты</span>
+                <span class="tag">MVP</span>
+              </div>
+            </article>
+          </div>
+          <div class="swipe-hint" aria-hidden="true">
+            Листайте карточки
+            <svg viewBox="0 0 32 16" fill="none"><path d="M1 8h28m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="sectors-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <span class="section-index">06 / ЦЕЛЕВЫЕ НИШИ</span>
+            <h2 id="sectors-title">Там, где нужны порядок и рост<span class="accent-text">.</span></h2>
+          </div>
+          <p class="section-lead">Особенно полезна компаниям, которые выросли быстрее своих финансовых процессов или готовятся к следующему этапу масштабирования.</p>
+        </div>
+
+        <div class="sectors">
+          <article class="sector-card reveal">
+            <div class="sector-top"><span class="sector-number">01</span><svg class="sector-arrow" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 19 19 5m0 0H8m11 0v11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <h3>Растущий бизнес</h3>
+            <p>Систематизация финансов перед масштабированием.</p>
+          </article>
+          <article class="sector-card reveal">
+            <div class="sector-top"><span class="sector-number">02</span><svg class="sector-arrow" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 19 19 5m0 0H8m11 0v11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <h3>Проектные компании</h3>
+            <p>Экономика проектов, план-факт и ликвидность.</p>
+          </article>
+          <article class="sector-card reveal">
+            <div class="sector-top"><span class="sector-number">03</span><svg class="sector-arrow" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 19 19 5m0 0H8m11 0v11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <h3>Сервис и digital</h3>
+            <p>Unit-экономика, аналитика и автоматизация.</p>
+          </article>
+          <article class="sector-card reveal">
+            <div class="sector-top"><span class="sector-number">04</span><svg class="sector-arrow" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 19 19 5m0 0H8m11 0v11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <h3>Новые направления</h3>
+            <p>Моделирование и проверка бизнес-гипотез.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact-card reveal">
+          <span class="eyebrow">Есть финансовая задача?</span>
+          <h2 id="contact-title">Назначим 20-минутную встречу<span class="accent-text">.</span></h2>
+          <p>Обсудим текущую ситуацию, цель бизнеса и три финансовых решения с наибольшим потенциальным эффектом. Отвечу в течение рабочего дня.</p>
+          <div class="contact-actions">
+            <a class="button button-primary" href="mailto:hello@olenagreen.ru">
+              Назначить встречу
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M14 7l5 5-5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a class="button button-secondary" href="https://t.me/olena_green" target="_blank" rel="noopener noreferrer">Telegram</a>
+            <button class="button button-secondary" id="copy-email" type="button" data-email="hello@olenagreen.ru">Скопировать email</button>
+            <button class="button button-secondary" id="print-resume" type="button">Сохранить в PDF</button>
+          </div>
+          <p class="copy-note" id="copy-note" role="status" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <dialog class="video-modal" id="about-video-modal" aria-labelledby="about-video-title">
+    <div class="video-modal-inner">
+      <div class="video-modal-header">
+        <span class="video-modal-title" id="about-video-title">Обо мне — видео-знакомство</span>
+        <button class="video-modal-close" id="close-about-video" type="button" aria-label="Закрыть видео">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m7 7 10 10M17 7 7 17" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+      <div class="video-frame">
+        <iframe id="about-video-frame" title="Видео об Олене Грин" allow="autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer; clipboard-write; screen-wake-lock" allowfullscreen></iframe>
+      </div>
+    </div>
+  </dialog>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>© <span id="year">2026</span> Олена Грин</span>
+      <span>Финансовый директор · AI-интегратор · Управленец</span>
+    </div>
+  </footer>
+
+  <script>
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const revealElements = document.querySelectorAll(".reveal");
+    const progressBar = document.querySelector(".scroll-progress");
+    const copyButton = document.querySelector("#copy-email");
+    const copyNote = document.querySelector("#copy-note");
+    const printResume = document.querySelector("#print-resume");
+    const aboutVideoOpen = document.querySelector("#open-about-video");
+    const aboutVideoModal = document.querySelector("#about-video-modal");
+    const aboutVideoClose = document.querySelector("#close-about-video");
+    const aboutVideoFrame = document.querySelector("#about-video-frame");
+    const resultsCarousel = document.querySelector(".results-carousel");
+    const resultsTrack = document.querySelector("#results-track");
+    const resultCards = [...resultsTrack.querySelectorAll(".bento-card")];
+    const carouselCurrent = document.querySelector("#carousel-current");
+    const carouselProgress = document.querySelector("#carousel-progress");
+    const carouselPrevious = document.querySelector("#carousel-prev");
+    const carouselNext = document.querySelector("#carousel-next");
+    const carouselToggle = document.querySelector("#carousel-toggle");
+    const carouselPauseIcon = carouselToggle.querySelector(".pause-icon");
+    const carouselPlayIcon = carouselToggle.querySelector(".play-icon");
+    let activeResult = 0;
+    let carouselTimer;
+    let carouselScrollTimer;
+    let isCarouselPaused = true;
+
+    document.querySelector("#year").textContent = new Date().getFullYear();
+
+    if (reducedMotion || !("IntersectionObserver" in window)) {
+      revealElements.forEach((element) => element.classList.add("is-visible"));
+    } else {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12, rootMargin: "0px 0px -30px" });
+
+      revealElements.forEach((element) => observer.observe(element));
+    }
+
+    function updateProgress() {
+      const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+      const progress = scrollable > 0 ? (window.scrollY / scrollable) * 100 : 0;
+      progressBar.style.setProperty("--progress", `${Math.min(progress, 100)}%`);
+    }
+
+    window.addEventListener("scroll", updateProgress, { passive: true });
+    updateProgress();
+
+    function updateCarousel(index, shouldScroll = true) {
+      activeResult = (index + resultCards.length) % resultCards.length;
+      carouselCurrent.textContent = String(activeResult + 1).padStart(2, "0");
+      carouselProgress.style.transform = `translateX(${activeResult * 100}%)`;
+      resultCards.forEach((card, cardIndex) => {
+        card.classList.toggle("is-active", cardIndex === activeResult);
+      });
+
+      if (shouldScroll) {
+        resultsTrack.scrollTo({
+          left: resultCards[activeResult].offsetLeft,
+          behavior: reducedMotion ? "auto" : "smooth",
+        });
+      }
+    }
+
+    function restartCarousel() {
+      window.clearInterval(carouselTimer);
+      if (!isCarouselPaused) {
+        carouselTimer = window.setInterval(() => updateCarousel(activeResult + 1), 6000);
+      }
+    }
+
+    function updateCarouselToggle() {
+      carouselToggle.classList.toggle("is-paused", isCarouselPaused);
+      carouselToggle.setAttribute("aria-pressed", String(isCarouselPaused));
+      carouselToggle.setAttribute("aria-label", isCarouselPaused ? "Запустить автопрокрутку" : "Остановить автопрокрутку");
+      carouselPauseIcon.hidden = isCarouselPaused;
+      carouselPlayIcon.hidden = !isCarouselPaused;
+    }
+
+    function pauseCarouselFromUser() {
+      isCarouselPaused = true;
+      updateCarouselToggle();
+      window.clearInterval(carouselTimer);
+    }
+
+    carouselPrevious.addEventListener("click", () => {
+      pauseCarouselFromUser();
+      updateCarousel(activeResult - 1);
+    });
+
+    carouselNext.addEventListener("click", () => {
+      pauseCarouselFromUser();
+      updateCarousel(activeResult + 1);
+    });
+
+    carouselToggle.addEventListener("click", () => {
+      isCarouselPaused = !isCarouselPaused;
+      updateCarouselToggle();
+      restartCarousel();
+    });
+
+    resultsTrack.addEventListener("keydown", (event) => {
+      if (event.key === "ArrowLeft" || event.key === "ArrowRight") {
+        event.preventDefault();
+        pauseCarouselFromUser();
+        updateCarousel(activeResult + (event.key === "ArrowRight" ? 1 : -1));
+      }
+    });
+
+    function syncCarouselToScroll() {
+      const closestIndex = resultCards.reduce((bestIndex, card, index) => {
+        const bestDistance = Math.abs(resultCards[bestIndex].offsetLeft - resultsTrack.scrollLeft);
+        const currentDistance = Math.abs(card.offsetLeft - resultsTrack.scrollLeft);
+        return currentDistance < bestDistance ? index : bestIndex;
+      }, 0);
+      updateCarousel(closestIndex, false);
+    }
+
+    resultsTrack.addEventListener("scroll", () => {
+      window.clearTimeout(carouselScrollTimer);
+      carouselScrollTimer = window.setTimeout(syncCarouselToScroll, 100);
+    }, { passive: true });
+
+    resultsTrack.addEventListener("pointerdown", pauseCarouselFromUser);
+    resultsTrack.addEventListener("wheel", pauseCarouselFromUser, { passive: true });
+    resultsTrack.addEventListener("touchstart", pauseCarouselFromUser, { passive: true });
+    resultsCarousel.addEventListener("mouseenter", () => window.clearInterval(carouselTimer));
+    resultsCarousel.addEventListener("mouseleave", restartCarousel);
+    resultsCarousel.addEventListener("focusin", () => window.clearInterval(carouselTimer));
+    resultsCarousel.addEventListener("focusout", restartCarousel);
+    updateCarousel(0, false);
+    updateCarouselToggle();
+    restartCarousel();
+
+    printResume.addEventListener("click", () => window.print());
+
+    function openAboutVideo() {
+      aboutVideoFrame.src = "https://kinescope.io/embed/jGk9Vo4NLCC7MGhU3wGnCA?autoplay=1";
+      aboutVideoModal.showModal();
+      document.body.classList.add("modal-open");
+    }
+
+    function closeAboutVideo() {
+      aboutVideoModal.close();
+    }
+
+    aboutVideoOpen.addEventListener("click", openAboutVideo);
+    aboutVideoClose.addEventListener("click", closeAboutVideo);
+    aboutVideoModal.addEventListener("click", (event) => {
+      if (event.target === aboutVideoModal) {
+        closeAboutVideo();
+      }
+    });
+    aboutVideoModal.addEventListener("close", () => {
+      aboutVideoFrame.src = "";
+      document.body.classList.remove("modal-open");
+      aboutVideoOpen.focus();
+    });
+
+    copyButton.addEventListener("click", async () => {
+      const email = copyButton.dataset.email;
+      try {
+        await navigator.clipboard.writeText(email);
+        copyNote.textContent = "Email скопирован в буфер обмена.";
+      } catch {
+        copyNote.textContent = `Email: ${email}`;
+      }
+    });
+  </script>
+  <!--
+    Самостоятельная проверка перед публикацией:
+    1. Откройте файл через локальный сервер, например: npx vite .
+    2. В DevTools включите режим устройств и проверьте ширины 320, 768 и 1920 px.
+    3. На ширине 320 px проверьте свайп карточек в секции «Компетенции».
+    4. Запустите Lighthouse для Performance и Accessibility.
+    5. Перед публикацией замените email, Telegram и при необходимости имя в тексте.
+  -->
+</body>
+</html>
